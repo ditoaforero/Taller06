@@ -10,13 +10,20 @@ import java.text.DecimalFormat;
  */
 
 /**
- *
+ * Esta clase permite realizar la tranformacion de los numeros double con el fin 
+ * que se pueda mostrar detalladamente con decimales.
  * @author Dito
  */
 public class Visual {
     
     
-    
+    /**
+     * Metodo: Permite tranformar un listado de double a string conservando sus decimales
+     * @param listadoValores la lista con valores double a ser transformados
+     * @param numDecimales numeros de decimales a conservar, va desde 1 hasta 8 
+     * por defecto toma 8
+     * @return Una lista con los valores tranformados, la lista es tipo String
+     */
     public static List tranformarDecimales(List<Double> listadoValores, int numDecimales){
         String parametroDecimales="0.00000000";
         switch(numDecimales){
@@ -55,6 +62,13 @@ public class Visual {
         return valoresTranformados;
     }
     
+    /**
+     * Metodo: Permite tranformar un valor double a string conservando sus decimales 
+     * @param valorTransformar valor double al que se le desea realizar la tranformacion
+     * @param numDecimales numeros de decimales a conservar, va desde 1 hasta 8 
+     * por defecto toma 8
+     * @return 
+     */
     public static String tranformarDecimales(double valorTransformar, int numDecimales){
         String parametroDecimales="0.00000000";
         switch(numDecimales){

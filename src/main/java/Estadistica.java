@@ -507,6 +507,7 @@ public class Estadistica {
         while (true) {
             valor = Estadistica.calcularDistribucionT(xEvaluado, dof);
             diferencia = valor - p;
+            System.out.println("Valor:"+valor+" xEvaluado:"+xEvaluado+" diferencia:"+diferencia+" d:"+d);
             if (Math.abs(diferencia)<rangoError){
                 break;
             } else if(diferencia < 0){
